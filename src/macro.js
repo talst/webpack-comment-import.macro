@@ -47,5 +47,5 @@ function requireWebpackCommentImport({ referencePath, state, babel }) {
 
   referencePath.parentPath
     .get("arguments")[0]
-    .addComment("leading", ` webpackChunkName: ${identifier} `);
+    .addComment("leading", ` webpackChunkName: "${identifier}" `);
 }
